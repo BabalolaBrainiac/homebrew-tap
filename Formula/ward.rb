@@ -11,7 +11,7 @@ class Ward < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_darwin_amd64.tar.gz"
-      sha256 "1f1521932185db53d8552d624bba41a85f990f4e51e6d41575a9f65d52ed7f81"
+      sha256 "562a34c8827fd72b6d381185b27286809aefdac5ceb76b48b2dedb0995e8791b"
 
       define_method(:install) do
         bin.install "ward"
@@ -19,7 +19,7 @@ class Ward < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_darwin_arm64v.tar.gz"
-      sha256 "5649809d3342e8a8a0ebaf675a3c9a9eeea5337e18fbc2c9a91c08bd187feb3a"
+      sha256 "34a6131de5db50bc5ce6632e855f767bfac22ca9724f5329291a0a1395372990"
 
       define_method(:install) do
         bin.install "ward"
@@ -30,21 +30,21 @@ class Ward < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_amd64.tar.gz"
-      sha256 "041f4620ec43b17e1c608030cfdfba0748d34bda1db20594e818988c60d6e0e2"
+      sha256 "a48ceee7199ad3e305245a0caa5a6f92b86baf531cffc5c94d459af9f9015937"
       define_method(:install) do
         bin.install "ward"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_armv6v.tar.gz"
-      sha256 "1cd8bcbe4b0c4052ad2df94f701e5f2a17cf8e949ff1ad48b036d8321f1fbcd5"
+      sha256 "9dccae3098225855958f2c43812e8dbbd9f85d27d7e0d663c731403a25f1e826"
       define_method(:install) do
         bin.install "ward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_arm64v.tar.gz"
-      sha256 "100662d5736cd52577284d0639dff8d29011192c144edde9697fe98e2758077b"
+      sha256 "ad65fb061ea553edbb958825d1dab8ee313f75e5aa28562f95cfed7e1b32ed46"
       define_method(:install) do
         bin.install "ward"
       end
