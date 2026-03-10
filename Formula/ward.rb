@@ -5,21 +5,21 @@
 class Ward < Formula
   desc "WardScribe CLI - Write once. Deploy everywhere."
   homepage "https://wardscribe.io"
-  version "0.1.0"
+  version "0.9.0-beta.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.1.0/ward_0.1.0_darwin_amd64.tar.gz"
-      sha256 "290d37bdbfac1ee4a6efe05bb278d3c60ff5e6125e4640e2cf6445f390cf5844"
+      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_darwin_amd64.tar.gz"
+      sha256 "1f1521932185db53d8552d624bba41a85f990f4e51e6d41575a9f65d52ed7f81"
 
       define_method(:install) do
         bin.install "ward"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.1.0/ward_0.1.0_darwin_arm64v.tar.gz"
-      sha256 "d2f8b112eb102ac411a32a13ee2875cd82e3278dc953dfa71537cd25ff869f08"
+      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_darwin_arm64v.tar.gz"
+      sha256 "5649809d3342e8a8a0ebaf675a3c9a9eeea5337e18fbc2c9a91c08bd187feb3a"
 
       define_method(:install) do
         bin.install "ward"
@@ -29,22 +29,22 @@ class Ward < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.1.0/ward_0.1.0_linux_amd64.tar.gz"
-      sha256 "2e2e91a0fd5085ed74e65478da375aceb85c3a313e4b6a29110f4e237c8452a2"
+      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_amd64.tar.gz"
+      sha256 "041f4620ec43b17e1c608030cfdfba0748d34bda1db20594e818988c60d6e0e2"
       define_method(:install) do
         bin.install "ward"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.1.0/ward_0.1.0_linux_armv6v.tar.gz"
-      sha256 "f71584c3958f6756acb2f82448ab91c88fd029a15403416c94e353b15ed5c5dc"
+      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_armv6v.tar.gz"
+      sha256 "1cd8bcbe4b0c4052ad2df94f701e5f2a17cf8e949ff1ad48b036d8321f1fbcd5"
       define_method(:install) do
         bin.install "ward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.1.0/ward_0.1.0_linux_arm64v.tar.gz"
-      sha256 "4c81aad691a8cafb84123ce23df73f4cf36ad71b355d602e4bdb22edaaa012b5"
+      url "https://github.com/BabalolaBrainiac/wardscribe-v2/releases/download/v0.9.0-beta.1/ward_0.9.0-beta.1_linux_arm64v.tar.gz"
+      sha256 "100662d5736cd52577284d0639dff8d29011192c144edde9697fe98e2758077b"
       define_method(:install) do
         bin.install "ward"
       end
